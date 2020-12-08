@@ -1,0 +1,2 @@
+class ActivateController < ApplicationController
+end
