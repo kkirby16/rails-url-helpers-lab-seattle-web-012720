@@ -1,1 +1,15 @@
+<body>
+
 <h1><%= @student.to_s %></h1>
+<% if @student.active == false %>
+<h2>This student is currently inactive.</h2>
+
+<% elsif @student.active == true %>
+<h2>This student is currently active.</h2>
+<% end %>
+
+<%= link_to "Activate Student", student_path(@student) %>
+
+
+</body>
+
